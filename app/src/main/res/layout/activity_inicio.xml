@@ -7,12 +7,13 @@
     tools:context=".ui.inicio.InicioActivity">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:id="@+id/welcomeTv"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:fontFamily="@font/harlow"
         android:text="Bienvenido NombreUsuario"
+        android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@color/verde_oscuro"
         android:textSize="24sp"

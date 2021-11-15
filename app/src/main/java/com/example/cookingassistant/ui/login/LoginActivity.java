@@ -124,8 +124,10 @@ public class LoginActivity extends AppCompatActivity {
                 loginViewModel.login(usernameEditText.getText().toString(),
                         passwordEditText.getText().toString());
                 */
-                Intent intent = new Intent(LoginActivity.this, InicioActivity.class);
-                LoginActivity.this.startActivity(intent);
+                Intent intent = new Intent(getApplicationContext(), InicioActivity.class);
+                intent.putExtra("username", usernameEditText.getText().toString());
+                //LoginActivity.this.startActivity(intent);
+                startActivity(intent);
             }
         });
     }
