@@ -5,6 +5,7 @@ import android.app.Activity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -23,6 +24,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.cookingassistant.R;
+import com.example.cookingassistant.ui.inicio.InicioActivity;
 import com.example.cookingassistant.ui.login.LoginViewModel;
 import com.example.cookingassistant.ui.login.LoginViewModelFactory;
 import com.example.cookingassistant.databinding.ActivityLoginBinding;
@@ -117,9 +119,13 @@ public class LoginActivity extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                /*
                 loadingProgressBar.setVisibility(View.VISIBLE);
                 loginViewModel.login(usernameEditText.getText().toString(),
                         passwordEditText.getText().toString());
+                */
+                Intent intent = new Intent(LoginActivity.this, InicioActivity.class);
+                LoginActivity.this.startActivity(intent);
             }
         });
     }

@@ -26,13 +26,15 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="112dp"
         android:fontFamily="@font/segoeuil"
-        android:text="Bienvenido NombreUsuario"
+        android:text="Que vas a cocinar hoy?"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@color/gris"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
 
     <Button
         android:id="@+id/login"
@@ -51,6 +53,62 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:layout_constraintVertical_bias="0.805" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:elevation="100dp"
+        android:fontFamily="@font/segmdl2"
+        android:text="&#xE10E;"
+        android:textColor="@drawable/font_colors"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/login"
+        app:layout_constraintStart_toStartOf="@+id/login"
+        app:layout_constraintTop_toTopOf="@+id/login" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:elevation="100dp"
+        android:fontFamily="@font/segmdl2"
+        android:text="&#xE082;"
+        android:textColor="@drawable/font_colors"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/login2"
+        app:layout_constraintStart_toStartOf="@+id/login2"
+        app:layout_constraintTop_toTopOf="@+id/login2" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:elevation="100dp"
+        android:fontFamily="@font/segmdl2"
+        android:text="&#xE11A;"
+        android:textColor="@drawable/font_colors"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/login3"
+        app:layout_constraintStart_toStartOf="@+id/login3"
+        app:layout_constraintTop_toTopOf="@+id/login3" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:elevation="100dp"
+        android:fontFamily="@font/segmdl2"
+        android:text="&#xE736;"
+        android:textColor="@drawable/font_colors"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/login4"
+        app:layout_constraintStart_toStartOf="@+id/login4"
+        app:layout_constraintTop_toTopOf="@+id/login4" />
 
     <Button
         android:id="@+id/login2"
@@ -103,4 +161,6 @@
         app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login3" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
