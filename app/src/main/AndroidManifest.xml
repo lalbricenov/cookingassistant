@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CookingAssistant">
         <activity
+            android:name=".ui.buscar.BuscarReceta"
+            android:exported="true" />
+        <activity
             android:name=".ui.receta.RecetaActivity"
             android:exported="true" />
         <activity
